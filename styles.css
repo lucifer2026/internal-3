@@ -1,0 +1,48 @@
+:root{
+  --bg:#071024;
+  --muted:#94a3b8;
+  --accent:#7c3aed;
+  --glass:rgba(255,255,255,0.04);
+  --radius:12px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: linear-gradient(180deg,#071024 0%, #07183a 100%);
+  color:#e6eef8;
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+.nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
+.logo{font-weight:700;color:#fff;text-decoration:none;font-size:1.1rem}
+.nav-links{list-style:none;display:flex;gap:1rem;margin:0;padding:0}
+.nav-links a{color:var(--muted);text-decoration:none;padding:0.4rem 0.6rem;border-radius:8px}
+.nav-links a:hover,.nav-links a:focus{color:#fff;background:rgba(255,255,255,0.03)}
+
+.hero{padding:4rem 0}
+.hero h1{font-size:clamp(1.6rem,4vw,3rem);margin:0 0 0.5rem}
+.hero p{color:var(--muted);max-width:60ch}
+.cta{display:inline-block;margin-top:1rem;background:var(--accent);color:white;padding:0.65rem 1rem;border-radius:10px;text-decoration:none}
+
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:-2rem}
+.feature-card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:1.5rem;border-radius:var(--radius);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+.feature-card h3{margin-top:0}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1rem;margin-top:2rem}
+.tile{background:var(--glass);padding:2rem;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted)}
+
+.contact{margin-top:2rem;padding:2rem;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:var(--radius)}
+.contact-form{display:grid;gap:0.75rem;max-width:600px}
+.contact-form label{display:flex;flex-direction:column;color:var(--muted);font-size:0.9rem}
+.contact-form input,.contact-form textarea{margin-top:0.4rem;padding:0.6rem;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#eaf2ff}
+.contact-form button{align-self:flex-start;padding:0.6rem 1rem;background:transparent;border:1px solid var(--accent);color:var(--accent);border-radius:8px}
+.contact-form button:hover{background:var(--accent);color:white;border-color:transparent}
+
+.site-footer{text-align:center;padding:1.25rem 0;color:var(--muted);margin-top:2rem}
+
+@media(max-width:600px){.nav-links{display:none}.hero{text-align:center}.container{padding:1rem}}

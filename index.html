@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Simple HTML & CSS App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#">MyApp</a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero container">
+      <h1>Beautiful HTML & CSS Application</h1>
+      <p>Responsive, accessible, and minimal — built with plain HTML and CSS.</p>
+      <a class="cta" href="#features">Explore</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="features" class="container features">
+      <article class="feature-card">
+        <h3>Responsive</h3>
+        <p>Layout adapts from mobile to large screens.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Accessible</h3>
+        <p>Semantic markup and focus styles.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Lightweight</h3>
+        <p>No frameworks — just HTML & CSS.</p>
+      </article>
+    </section>
+
+    <section id="gallery" class="container gallery">
+      <div class="tile">A</div>
+      <div class="tile">B</div>
+      <div class="tile">C</div>
+      <div class="tile">D</div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <form class="contact-form" onsubmit="alert('Form submitted (demo)'); return false;">
+        <label>
+          Name
+          <input type="text" placeholder="Your name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          Message
+          <textarea placeholder="Message" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 MyApp — Built with HTML &amp; CSS</p>
+  </footer>
+</body>
+</html>
